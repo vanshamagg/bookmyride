@@ -5,7 +5,7 @@ import api from './routes';
 import morgan from 'morgan';
 
 const app = express();
-const PORT = 8081 || process.env.PORT;
+const PORT = process.env.PORT;
 
 // MIDDLEWARES
 app.use(morgan('dev'))
