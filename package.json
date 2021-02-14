@@ -12,9 +12,11 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "npx babel -d ./build ./src -s",
     "start-dev": "node --exec babel-node src/server.js",
-    "server": "nodemon --exec babel-node src/server.js"
+    "server": "nodemon --exec babel-node src/server.js",
+    "postinstall": "npm install",
+    "start": "npm run start-prod"
   },
-  "author": "Vansham Aggarwal, Shiva Prasad, Priyam Khutela",
+  "author": "Vansham Aggarwal",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.2.3",
