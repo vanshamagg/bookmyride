@@ -4,10 +4,10 @@
   "description": "backend for a taxi booking applocation",
   "main": "server.js",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm" : "6.x"
   },
   "scripts": {
-    "postinstall": "npm install",
     "start": "npm run start-prod",
     "start-prod": "npm run build && node ./build/server.js",
     "build": "npm run clean && npm run build-babel",
