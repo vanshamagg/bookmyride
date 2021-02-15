@@ -5,7 +5,9 @@
 import { Router } from 'express';
 import bodyParser from 'body-parser';
 import rider from './rider.route';
+import vehicle from './vehicle.route'
 import auth from './auth.route';
+
 
 const router = Router();
 
@@ -22,5 +24,6 @@ router.get('/', (req, res) => {
 // MOUNTED ROUTERS
 router.use('/rider', rider);
 router.use('/auth', auth);
+router.use('/vehicle', vehicle)
 
 export default router;

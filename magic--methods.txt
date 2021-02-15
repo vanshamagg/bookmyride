@@ -1,0 +1,13 @@
+RIDER
+
+[
+  '_customGetters',    '_customSetters',
+  'validators',        '_hasCustomGetters',
+  '_hasCustomSetters', 'rawAttributes',
+  '_isAttribute',      'getVehicles',
+  'countVehicles',     'hasVehicle',
+  'hasVehicles',       'setVehicles',
+  'addVehicle',        'addVehicles',
+  'removeVehicle',     'removeVehicles',
+  'createVehicle'
+]

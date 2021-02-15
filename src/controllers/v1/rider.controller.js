@@ -38,7 +38,13 @@ async function register(req, res) {
  */
 async function get(req, res) {
   try {
-
+    const id = req.user.id;
+    const rider = await Rider.findByPk(id, {
+      attributes: {
+        exclude: ['password']
+      }
+    });
+    res.json(rider)
   } catch (error) {
     res.status(400).json({ error: error.message || error });
   }
